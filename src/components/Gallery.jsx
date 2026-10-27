@@ -82,7 +82,7 @@ return (
 <section>
     <SearchBar value={searchTerm} onChange={handleSearch}/>
 
-     <div className="mb-6 flex items-center justify-between">
+     <div className="mb-6 m-2 flex items-center justify-between">
         <p className="text-sm text-slate-500">
           Showing {filteredPhotos.length}{" "}
           {filteredPhotos.length === 1 ? "photo" : "photos"}
@@ -101,7 +101,7 @@ return (
           </p>
         </div>
       ) : (
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 m-2">
           {filteredPhotos.map((photo) => (
             <PhotoCard
               key={photo.id}
