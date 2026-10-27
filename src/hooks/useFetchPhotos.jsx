@@ -18,7 +18,7 @@ function useFetchPhotos(){
                         throw new Error("failes to load");
 
                     }
-                    const data = await response().json();
+                    const data = await response.json();
                     setPhotos(data);
 
                 }catch(err){
