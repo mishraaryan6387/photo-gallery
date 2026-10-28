@@ -13,7 +13,7 @@ function useFetchPhotos(){
                 try {
                     setLoading(true);
                     setError("");
-                    const response =await fetch(photos_API) ;
+                    const response = await fetch(photos_API) ;
                     if(!response.ok){
                         throw new Error("failes to load");
 
